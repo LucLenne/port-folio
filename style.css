@@ -1,0 +1,142 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    line-height: 3em;
+}
+
+
+header
+{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+
+.partie_1
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    padding: 10px;
+}
+
+
+.lien
+{
+    display: inline;
+    padding: 8px;
+    background-color: black;
+    text-decoration: none;
+    font-size: medium;
+}
+
+
+.lien:hover
+{
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+}
+
+
+.img
+{
+    width: 100%;
+    position: absolute;
+}
+
+
+h1
+{
+    position: relative;
+    padding-top: 20%;
+    margin-bottom: 40%;
+}
+
+
+h1, h2, h3, a, p
+{
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    padding-left: 5% ;
+    padding-right: 5% ;
+}
+
+
+.pres
+{
+    padding-bottom: 10%;
+}
+
+
+h2
+{
+    border: 3px solid white;
+}
+
+
+h2:hover
+{
+    border: 3px solid black;
+    color: black;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+
+.proj
+{
+    margin-bottom: 15%;
+}
+
+
+@media screen and (min-width:600px) 
+{
+    .contact
+    {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+    }
+
+
+    .proj, h2
+    {
+        text-align: center;
+        
+    }
+
+
+    .partie_2
+    {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap: 0px;
+    }
+}
+.jour
+{
+    background-color: white;
+    color: black;
+    
+}
+.nuit
+{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+.transp
+{
+    opacity: 0% ;
+}
+.apparition
+{
+    transition: opacity 3s;
+    opacity: 100%;
+}
